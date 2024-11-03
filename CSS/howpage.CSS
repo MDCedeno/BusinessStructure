@@ -1,0 +1,353 @@
+/* Google Font Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+    position: fixed; /* Keep the navigation fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.4s ease;
+    z-index: 3; /* Ensure the navigation is above the blurred background */
+}
+
+.icon-img {
+  height: 50px;
+  width: 50px;
+}
+
+nav.sticky {
+  padding: 15px 20px;
+  background: #23af5e;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-content {
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: #fff;
+  margin: 20px 0 0;
+}
+
+nav.sticky .logo a {
+  color: #fff;
+}
+
+.nav-content .nav-links {
+  display: flex;
+}
+
+.nav-content .nav-links li {
+  list-style: none;
+  margin: 0 8px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+   color: #23af5e;
+}
+ 
+nav.sticky .nav-links li a {
+   color: #fff;
+   transition: all 0.4s ease;
+}
+
+nav.sticky .nav-links li a:hover{
+  color: #0a2131;
+}
+
+/* How Section */
+.how {
+    position: relative; /* Make it relative for absolute positioning of the pseudo-element */
+    height: 100vh;
+    color: #fff;
+    overflow: hidden; /* Prevent overflow of the pseudo-element */
+    background-color: #ad2536;
+}
+
+.main-header {
+    color: #fff;
+    margin-left: 460px;
+    margin-top: 48px;
+    font-family: Arial, sans-serif;
+}
+
+.tutorial {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+}
+
+.tutorial h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.tutorial h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.tutorial h4 {
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-weight: lighter;
+    font-style: Bold;
+}
+
+/*.explanation Section */
+.explanation {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 50px;
+}
+
+.explanation .header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.explanation .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.explanation .box {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 1px;
+    border: 1px solid #23af5e;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.explanation .box img.box-image {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 5px 5px 0 0; /* Matches the box’s border radius on top */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.explanation .box p {
+    text-align: left; /* Aligns all text content to the left */
+    margin: 10px 10px;
+    line-height: 1.6; /* Optional: adds readability by increasing line spacing */
+    color: #333; /* Set the color for the paragraph text */
+}
+
+.explanation .box h3 {
+    color: #333; /* Set the color for the h3 headings */
+}
+
+.end {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 50px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    color:#fff;
+}
+
+.box {
+    background-color: #d8b816;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.box ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.footer, a {
+    margin-top: 40px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.footer .logo {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer .icon-img {
+  height: 30px;
+  width: 30px;
+}
+
+.wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  color: #23af5e;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  -webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  -webkit-transform: translate(-50%) rotate(45deg);
+  -ms-transform: translate(-50%) rotate(45deg);
+  transform: translate(-50%) rotate(45deg);
+  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
