@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Change this for appropriate web icon -->
-    <link rel="icon" type="image/x-icon" href="../img/foodIcon.png" />
+    <link rel="icon" type="image/x-icon" href="../BusinessStructure-1/img/foodIcon.png" />
     <!-- You can add more common stylesheets here -->
-    <link rel="stylesheet" href="../CSS/accountpage.css" />
+    <link rel="stylesheet" href="../BusinessStructure-1/CSS/homepage.CSS" />
     <title>AffordaFood</title>
   </head>
 
@@ -16,15 +16,15 @@
     <nav>
       <div class="nav-content">
         <div class="logo">
-          <img src="../img/foodIcon.png" alt="Icon" class="icon-img" />
-          <a href="homepage.php">AffordaFood</a>
+          <img src="../BusinessStructure-1/img/foodIcon.png" alt="Icon" class="icon-img" />
+          <a href="../BusinessStructure-1/PHP/homepage.html">AffordaFood</a>
         </div>
         <ul class="nav-links">
-          <li><a href="homepage.php">Home</a></li>
-          <li><a href="mealpage.php">Meal Plans</a></li>
-          <li><a href="marketpage.php">Market</a></li>
-          <li><a href="howpage.php">How it works</a></li>
-          <li><a href="accountpage.php">My Account</a></li>
+          <li><a href="../BusinessStructure-1/PHP/homepage.html">Home</a></li>
+          <li><a href="../BusinessStructure-1/PHP/mealpage.html">Meal Plans</a></li>
+          <li><a href="../BusinessStructure-1/PHP/marketpage.html">Market</a></li>
+          <li><a href="../BusinessStructure-1/PHP/howpage.html">How it works</a></li>
+          <li><a href="../BusinessStructure-1/PHP/accountpage.html">My Account</a></li>
         </ul>
       </div>
     </nav>
@@ -40,60 +40,98 @@
       };
     </script>
 
-    <div class="top-background">
+    <!-- The landing section with welcome message and order button -->
+    <section class="landing">
+      <div class="welcome">
+        <h1>Welcome to AffordaFood</h1>
+        <h3>Where Convenience Meets Culinary Genius!</h3>
+        <a href="../BusinessStructure-1/PHP/accountpage.html">LET'S GO</a>
+      </div>
+    </section>
+
+    <!-- The about section with company info -->
+    <section class="why">
       <div class="header">
-        <h1>ACCOUNT</h1>
+        <h1>WHY OUR COMPANY?</h1>
       </div>
+      <div class="content">
+        <div class="box">
+          <img 
+            src="../BusinessStructure-1/img/caesar.webp" 
+            alt="Healthy Icon" 
+            class="box-image" />
+          <h3>AFFORDABLE</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="box">
+          <img
+            src="../BusinessStructure-1/img/panFried.jpg"
+            alt="Convenient Icon"
+            class="box-image"
+          />
+          <h3>HEALTHY</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="box">
+          <img
+            src="../BusinessStructure-1/img/stirFry.jpg"
+            alt="Affordable Icon"
+            class="box-image"
+          />
+          <h3>CONVENIENT</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- The market section with ingredients market and budget range -->
+    <div class="market-budget-container">
+      <section class="market">
+        <div class="ingredients">
+          <h1>Ingredients Market</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="../BusinessStructure-1/PHP/marketpage.html" class="cta-button">SHOP NOW</a>
+        </div>
+      </section>
+
+      <section class="budget">
+        <div class="budget-range">
+          <h1>Budget Range</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="../BusinessStructure-1/PHP/mealpage.html" class="cta-button">PERSONALIZE</a>
+        </div>
+      </section>
     </div>
 
-    <!-- This is the account section for creating an account and changing the subscription -->
-    <div class="container">
-      <div class="login-form">
-        <h2>Login</h2>
-        <form>
-          <label for="username">Username or email address:</label>
-          <input type="text" id="username-login" name="username" required />
-
-          <label for="password">Password:</label>
-
-          <input type="password" id="password" name="password" required />
-
-          <div class="checkbox">
-            <input type="checkbox" id="remember-me" name="remember-me" />
-            <label class="remember" for="remember-me">Remember me</label>
-          </div>
-
-          <button class="btn-log" type="submit">LOG IN</button>
-          <a href="#">Lost your password?</a>
-        </form>
-      </div>
-
-      <div class="register-form">
-        <h2>Register</h2>
-        <form>
-          <label for="username">Username:</label>
-          <input type="text" id="username-signup" name="username" required />
-
-          <label for="email">Email address:</label>
-          <input type="email" id="email" name="email" required />
-
-          <p>
-            A link to set a new password will be sent to your email address.
-          </p>
-
-          <p>
-            Your personal data will be used to support your experience
-            throughout this website, to manage access to your account, and for
-            other purposes described in our <a href="#">privacy policy</a>.
-          </p>
-
-          <button class="btn-sign" type="submit">REGISTER</button>
-        </form>
-      </div>
-    </div>
-
-     <!-- Footer section with social media icons -->
+    <!-- The end section with company info and contact details -->
     <div class="end">
+      <div class="about">
+        <h2>ABOUT US</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
       <div class="content">
         <div class="box">
           <h3>COMPANY INFO</h3>
@@ -160,8 +198,8 @@
       </div>
       <div class="footer">
         <div class="logo">
-          <img src="../img/foodIcon.png" alt="Icon" class="icon-img" />
-          <a href="homepage.php">AffordaFood</a>
+          <img src="../BusinessStructure-1/img/foodIcon.png" alt="Icon" class="icon-img" />
+          <a href="../BusinessStructure-1/PHP/homepage.html">AffordaFood</a>
         </div>
         <p>Privacy Policy - Terms of Service - FAQ's</p>
         <p>© 2022 AffordaFood. All rights reserved.</p>

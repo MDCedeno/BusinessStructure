@@ -7,7 +7,7 @@
     <!-- Change this for appropriate web icon -->
     <link rel="icon" type="image/x-icon" href="../img/foodIcon.png" />
     <!-- You can add more common stylesheets here -->
-    <link rel="stylesheet" href="../CSS/howpage.css" />
+    <link rel="stylesheet" href="../CSS/accountpage.css" />
     <title>AffordaFood</title>
   </head>
 
@@ -17,14 +17,14 @@
       <div class="nav-content">
         <div class="logo">
           <img src="../img/foodIcon.png" alt="Icon" class="icon-img" />
-          <a href="homepage.php">AffordaFood</a>
+          <a href="homepage.html">AffordaFood</a>
         </div>
         <ul class="nav-links">
-          <li><a href="homepage.php">Home</a></li>
-          <li><a href="mealpage.php">Meal Plans</a></li>
-          <li><a href="marketpage.php">Market</a></li>
-          <li><a href="howpage.php">How it works</a></li>
-          <li><a href="accountpage.php">My Account</a></li>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="mealpage.html">Meal Plans</a></li>
+          <li><a href="marketpage.html">Market</a></li>
+          <li><a href="howpage.html">How it works</a></li>
+          <li><a href="accountpage.html">My Account</a></li>
         </ul>
       </div>
     </nav>
@@ -40,57 +40,69 @@
       };
     </script>
 
-    <!-- This is the how page section -->
-     <section class="how">
-      <h1 class="main-header">HOW IT WORKS</h1>
-      <div class="tutorial">
-        <h1>Make it yours!</h1>
-        <h3>Personalize your healthy and budget friendly diet</h3>
-        <h4>PERSONALIZE . SHOP . ENJOY</h4>
-      </div>
-    </section>
-
-    <!-- The tutorial section -->
-    <section class="explanation">
+    <div class="top-background">
       <div class="header">
-        <h1>GUIDE TO AFFORDAFOOD</h1>
+        <h1>ACCOUNT</h1>
       </div>
-      <div class="content">
-        <div class="box">
-          <img src="../img/caesar.webp" alt="Healthy Icon" class="box-image" />
-          <h3>SETUP MEAL PLANS</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div class="box">
-          <img
-            src="../img/panFried.jpg"
-            alt="Convenient Icon"
-            class="box-image"
-          />
-          <h3>SHOP FOR PREPARED MEAL OR INGREDIENTS</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div class="box">
-          <img
-            src="../img/stirFry.jpg"
-            alt="Affordable Icon"
-            class="box-image"
-          />
-          <h3>FOLLOW THE GUIDE FOR RECIPES</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-    </section>
+    </div>
 
+    <!-- This is the account section for creating an account and changing the subscription -->
+    <div class="container">
+      <div class="login-form">
+        <h2>Login</h2>
+        <form>
+          <label for="username">Username or email address:</label>
+          <input type="text" id="username-login" name="username" required />
+
+          <label for="password">Password:</label>
+
+          <input type="password" id="password" name="password" required />
+
+          <div class="checkbox">
+            <input type="checkbox" id="remember-me" name="remember-me" />
+            <label class="remember" for="remember-me">Remember me</label>
+          </div>
+
+          <p>
+            A link to set a new password will be sent to your email address.
+          </p>
+
+          <p>
+            Your personal data will be used to support your experience
+            throughout this website, to manage access to your account, and for
+            other purposes described in our <a href="#">privacy policy</a>.
+          </p>
+
+          <button class="btn-log" type="submit">LOG IN</button>
+          <a href="#">Lost your password?</a>
+        </form>
+      </div>
+
+      <div class="register-form">
+        <h2>Register</h2>
+        <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username-signup" name="username" required />
+
+          <label for="email">Email address:</label>
+          <input type="email" id="email" name="email" required />
+
+          <p>
+            A link to set a new password will be sent to your email address.
+          </p>
+
+          <p>
+            Your personal data will be used to support your experience
+            throughout this website, to manage access to your account, and for
+            other purposes described in our <a href="#">privacy policy</a>.
+          </p>
+
+          <button class="btn-sign" type="submit">REGISTER</button>
+        </form>
+      </div>
+    </div>
+
+     <!-- Footer section with social media icons -->
     <div class="end">
       <div class="content">
         <div class="box">
@@ -159,11 +171,11 @@
       <div class="footer">
         <div class="logo">
           <img src="../img/foodIcon.png" alt="Icon" class="icon-img" />
-          <a href="homepage.php">AffordaFood</a>
+          <a href="homepage.html">AffordaFood</a>
         </div>
         <p>Privacy Policy - Terms of Service - FAQ's</p>
         <p>© 2022 AffordaFood. All rights reserved.</p>
       </div>
     </div>
-</body>
+  </body>
 </html>

@@ -7,7 +7,7 @@
     <!-- Change this for appropriate web icon -->
     <link rel="icon" type="image/x-icon" href="../img/foodIcon.png" />
     <!-- You can add more common stylesheets here -->
-    <link rel="stylesheet" href="../CSS/marketpage.css" />
+    <link rel="stylesheet" href="../CSS/mealpage.css" />
     <title>AffordaFood</title>
   </head>
 
@@ -17,14 +17,14 @@
       <div class="nav-content">
         <div class="logo">
           <img src="../img/foodIcon.png" alt="Icon" class="icon-img" />
-          <a href="homepage.php">AffordaFood</a>
+          <a href="homepage.html">AffordaFood</a>
         </div>
         <ul class="nav-links">
-          <li><a href="homepage.php">Home</a></li>
-          <li><a href="mealpage.php">Meal Plans</a></li>
-          <li><a href="marketpage.php">Market</a></li>
-          <li><a href="howpage.php">How it works</a></li>
-          <li><a href="accountpage.php">My Account</a></li>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="mealpage.html">Meal Plans</a></li>
+          <li><a href="marketpage.html">Market</a></li>
+          <li><a href="howpage.html">How it works</a></li>
+          <li><a href="accountpage.html">My Account</a></li>
         </ul>
       </div>
     </nav>
@@ -40,47 +40,48 @@
       };
     </script>
 
-    <div class="top-background">
-        <div class="header">
-          <h1>MARKET</h1>
+    <!-- The meal section with selection -->
+    <section class="meal">
+      <h1>MEAL PLANS</h1>
+      <div class="header">
+        <div class="selected-plan">
+          <h3>SELECTED PLAN</h3>
+          <h4 class="selection" id="selected-plan-text"> Select a plan below</h4>
         </div>
-    </div>
-
-    <!-- The market section with selection -->
-    <section class="market">
-     
-      <div class="container">
-        <header>
-          <div class="title">PRODUCT LIST</div>
-          <div class="icon-cart">
-            <svg
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 18 20"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"
-              />
-            </svg>
-            <span>0</span>
-          </div>
-        </header>
-        <div class="listProduct"></div>
       </div>
-      <div class="cartTab">
-        <h1>SHOPPING CART TAB</h1>
-        <div class="listCart"></div>
-        <div class="total-price">
-          <h3>Total: $<span id="totalAmount">0.00</span></h3>
+      <div class="content">
+        <div class="box">
+          <img src="../img/caesar.webp" alt="High Protein" class="box-image" />
+          <h3>HIGH PROTEIN</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button class="cta-button" onclick="selectPlan('HIGH PROTEIN')">
+            SELECT
+          </button>
         </div>
-        <div class="btn">
-          <button class="close">CLOSE</button>
-          <button class="checkOut">CHECK OUT</button>
+        <div class="box">
+          <img src="../img/panFried.jpg" alt="Vegan" class="box-image" />
+          <h3>VEGAN</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button class="cta-button" onclick="selectPlan('VEGAN')">
+            SELECT
+          </button>
+        </div>
+        <div class="box">
+          <img src="../img/stirFry.jpg" alt="Quick Meals" class="box-image" />
+          <h3>QUICK MEALS</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button class="cta-button" onclick="selectPlan('QUICK MEALS')">
+            SELECT
+          </button>
         </div>
       </div>
     </section>
@@ -153,7 +154,7 @@
       <div class="footer">
         <div class="logo">
           <img src="../img/foodIcon.png" alt="Icon" class="icon-img" />
-          <a href="homepage.php">AffordaFood</a>
+          <a href="homepage.html">AffordaFood</a>
         </div>
         <p>Privacy Policy - Terms of Service - FAQ's</p>
         <p>© 2022 AffordaFood. All rights reserved.</p>
@@ -162,4 +163,8 @@
   </body>
 </html>
 
-<script src="app.js"></script>
+<script>
+  function selectPlan(planName) {
+    document.getElementById("selected-plan-text").textContent = planName;
+  }
+</script>

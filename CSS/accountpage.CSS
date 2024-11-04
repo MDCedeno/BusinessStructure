@@ -106,7 +106,7 @@ nav.sticky .nav-links li a:hover {
   justify-content: center;
   color: #fff;
   flex-wrap: wrap;
-  margin-left: 470px;
+  margin-left: 300px;
   margin-bottom: 12px;
   font-family: Arial, sans-serif;
 }
@@ -137,13 +137,20 @@ nav.sticky .nav-links li a:hover {
   margin: 20px;
 }
 
+.login-form p {
+  font-size: 20;
+  color: #ddd;
+  line-height: 1.5;
+  visibility: hidden;
+}
+
 .register-form h2 {
     font-size: 48;
     margin: 20px;
 }
 
 .register-form p {
-    margin-bottom: 10px;
+    margin-top: 10px;
     font-size: 20;
     color: #ddd;
     line-height: 1.5;
@@ -160,6 +167,7 @@ label {
 .checkbox .remember {
     font-size: 24;
     margin: 0;
+    margin-left: 5px;
 }
 
 input[type="text"],
@@ -173,7 +181,7 @@ input[type="email"] {
 }
 
 .btn-log {
-  margin-top: 155px;
+  margin-top: 15px;
   background-color: #23af5e;
   color: #fff;
   padding: 10px 20px;
@@ -183,7 +191,7 @@ input[type="email"] {
 }
 
 .btn-sign {
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: #23af5e;
     color: #fff;
     padding: 10px 20px;
@@ -200,7 +208,6 @@ a {
 .checkbox {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
 }
 
 /* footer */

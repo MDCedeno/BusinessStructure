@@ -104,7 +104,7 @@ nav.sticky .nav-links li a:hover{
 
 .main-header {
     color: #fff;
-    margin-left: 460px;
+    margin-left: 300px;
     margin-top: 48px;
     font-family: Arial, sans-serif;
 }
@@ -113,7 +113,7 @@ nav.sticky .nav-links li a:hover{
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-top: 300px;
+    margin-top: 220px;
 }
 
 .tutorial h1 {

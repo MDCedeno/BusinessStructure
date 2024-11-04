@@ -100,14 +100,14 @@ nav.sticky .nav-links li a:hover{
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
-    height: 100vh;
+    height: 140vh;
     padding-top: 48px;
     position: relative;
 }
 
 h1 {
     color: #fff;
-    margin-left: 410px;
+    margin-left: 250px;
     font-family: Arial, sans-serif;
 }
 
@@ -136,7 +136,7 @@ h1 {
 .meal .content {
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 20px;
     height: 420px;
 }
 
