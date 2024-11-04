@@ -68,7 +68,7 @@ nav.sticky .logo a {
 
 .nav-content .nav-links li {
   list-style: none;
-  margin: 0 8px;
+  margin: 5px 8px;
 }
 
 .nav-links li a {
@@ -93,34 +93,28 @@ nav.sticky .nav-links li a:hover {
   color: #0a2131;
 }
 
-.top-background {
-  background-color: #0a2131;
-  position: relative;
-  display: flex;
-  height: 90px;
-  align-items: flex-end;
-}
-
-.top-background .header {
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  flex-wrap: wrap;
-  margin-left: 300px;
-  margin-bottom: 12px;
-  font-family: Arial, sans-serif;
-}
-
 /* Center container and make it responsive */
 .container {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
+  align-items: flex-start;
   box-sizing: border-box;
   background-color: #0a2131;
   color:#ddd;
+  position: relative; /* Make it relative for absolute positioning of the pseudo-element */
+  height: 100vh;
+  overflow: hidden; /* Prevent overflow of the pseudo-element */
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-top: 40px;
+}
+
+.main-header {
+  color: #fff;
+  margin-left: 240px;
+  margin-top: 0;
+  font-family: Arial, sans-serif;
 }
 
 .login-form,
@@ -128,6 +122,7 @@ nav.sticky .nav-links li a:hover {
   width: 30%;
   height: 500px;
   border: 1px solid #ccc;
+  margin-top:60px;
   padding: 20px;
   border-radius: 5px;
 }
@@ -240,6 +235,8 @@ a {
 .box ul {
   list-style: none;
   padding: 0;
+  align-items: center;
+  height: auto;
 }
 
 .box ul li {
@@ -382,4 +379,174 @@ a {
 .wrapper .instagram:hover .tooltip::before {
   background: #e4405f;
   color: #fff;
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+  display: none; /* Hidden on larger screens */
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  /* Hide navigation links on smaller screens */
+  .nav-content .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #23af5e;
+      position: absolute;
+      top: 100%; /* Position below the nav bar */
+      right: 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  /* Display the hamburger menu on smaller screens */
+  .hamburger {
+      display: block;
+  }
+
+  /* Show nav links when active */
+  .nav-content .nav-links.active {
+      display: flex;
+  }
+
+  /* Adjustments for links inside the dropdown */
+  .nav-links li {
+      margin: 10px 0;
+  }
+}
+
+/* Responsive Design */
+
+/* General adjustments for screens 1200px and below */
+@media (max-width: 1200px) {
+  /* Navigation */
+  .nav-content {
+    padding: 10px;
+  }
+  .logo a {
+    font-size: 30px;
+  }
+  .nav-links li a {
+    font-size: 16px;
+  }
+
+  .main-header {
+    margin-left: 20px;
+    font-size: 1rem;
+    margin-top: 60px;
+  }
+}
+
+/* Layout adjustments for tablets (1024px and below) */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .login-form,
+  .register-form {
+    width: 80%;
+  }
+}
+
+/* Further adjustments for medium devices (768px and below) */
+@media (max-width: 768px) {
+  /* Hide navigation links */
+  .nav-content .nav-links {
+    display: none;
+  }
+  
+  /* Adjust logo size */
+  .logo a {
+    font-size: 24px;
+  }
+
+  /* Form adjustments */
+  .login-form,
+  .register-form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .login-form h2,
+  .register-form h2 {
+    font-size: 22px;
+    margin: 15px 0;
+  }
+
+  label,
+  .checkbox .remember {
+    font-size: 20px;
+  }
+
+  .btn-log,
+  .btn-sign {
+    padding: 8px 16px;
+  }
+}
+
+/* Layout for very small devices (480px and below) */
+@media (max-width: 480px) {
+  /* Logo and navigation adjustments */
+  .logo a {
+    font-size: 20px;
+  }
+  .nav-links li a {
+    font-size: 14px;
+  }
+
+  /* Icon image sizing */
+  .icon-img {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* Form adjustments */
+  .login-form,
+  .register-form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .login-form h2,
+  .register-form h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  label,
+  .checkbox .remember {
+    font-size: 16px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    padding: 8px;
+  }
+
+  .btn-log,
+  .btn-sign {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  /* Footer adjustments */
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .social-icons .social-icon {
+    font-size: 1.5rem;
+  }
 }

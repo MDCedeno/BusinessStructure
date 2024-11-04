@@ -1,34 +1,34 @@
 /* Google Font Import Link */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 /* General Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 nav {
-    position: fixed; /* Keep the navigation fixed at the top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    transition: all 0.4s ease;
-    z-index: 3; /* Ensure the navigation is above the blurred background */
+  position: fixed; /* Keep the navigation fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.4s ease;
+  z-index: 3; /* Ensure the navigation is above the blurred background */
 }
 
 .icon-img {
@@ -68,7 +68,7 @@ nav.sticky .logo a {
 
 .nav-content .nav-links li {
   list-style: none;
-  margin: 0 8px;
+  margin: 5px 8px;
 }
 
 .nav-links li a {
@@ -81,163 +81,178 @@ nav.sticky .logo a {
 }
 
 .nav-links li a:hover {
-   color: #23af5e;
-}
- 
-nav.sticky .nav-links li a {
-   color: #fff;
-   transition: all 0.4s ease;
+  color: #23af5e;
 }
 
-nav.sticky .nav-links li a:hover{
+nav.sticky .nav-links li a {
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+nav.sticky .nav-links li a:hover {
   color: #0a2131;
 }
 
 /* How Section */
 .how {
-    position: relative; /* Make it relative for absolute positioning of the pseudo-element */
-    height: 100vh;
-    color: #fff;
-    overflow: hidden; /* Prevent overflow of the pseudo-element */
-    background-color: #ad2536;
+  position: relative; /* Make it relative for absolute positioning of the pseudo-element */
+  height: 100vh;
+  color: #fff;
+  overflow: hidden; /* Prevent overflow of the pseudo-element */
+  background-color: #ad2536;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-top: 48px;
 }
 
 .main-header {
-    color: #fff;
-    margin-left: 300px;
-    margin-top: 48px;
-    font-family: Arial, sans-serif;
+  color: #fff;
+  margin-left: 250px;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
 }
 
 .tutorial {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 220px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 220px;
 }
 
 .tutorial h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 
 .tutorial h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-weight: lighter;
-    font-style: italic;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  font-style: italic;
 }
 
 .tutorial h4 {
-    font-size: 20px;
-    margin-bottom: 50px;
-    font-weight: lighter;
-    font-style: Bold;
+  font-size: 20px;
+  margin-bottom: 50px;
+  font-weight: lighter;
+  font-style: Bold;
 }
 
 /*.explanation Section */
 .explanation {
-    background-color: #f0f0f0; /* Light gray background */
-    padding: 50px;
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 50px;
 }
 
 .explanation .header {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #555;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
 }
 
 .explanation .content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Add some spacing */
 }
 
 .explanation .box {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 1px;
-    border: 1px solid #23af5e;
-    border-radius: 5px;
-    width: 30%;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 1px;
+  border: 1px solid #23af5e;
+  border-radius: 5px;
+  width: 30%;
 }
 
 .explanation .box img.box-image {
-    width: 100%;
-    height: 200px; /* Adjust height as needed */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    border-radius: 5px 5px 0 0; /* Matches the box’s border radius on top */
-    margin-bottom: 10px; /* Space between image and text */
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 5px 5px 0 0; /* Matches the box’s border radius on top */
+  margin-bottom: 10px; /* Space between image and text */
 }
 
 .explanation .box p {
-    text-align: left; /* Aligns all text content to the left */
-    margin: 10px 10px;
-    line-height: 1.6; /* Optional: adds readability by increasing line spacing */
-    color: #333; /* Set the color for the paragraph text */
+  text-align: left; /* Aligns all text content to the left */
+  margin: 10px 10px;
+  line-height: 1.6; /* Optional: adds readability by increasing line spacing */
+  color: #333; /* Set the color for the paragraph text */
 }
 
 .explanation .box h3 {
-    color: #333; /* Set the color for the h3 headings */
+  color: #333; /* Set the color for the h3 headings */
 }
 
 .end {
-    background-color: #f0f0f0; /* Light gray background */
-    padding: 50px;
-    text-align: center;
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 50px;
+  text-align: center;
 }
 
 .content {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-    color:#fff;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  color: #fff;
+}
+
+.content-guide {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  color: #fff;
 }
 
 .box {
-    background-color: #d8b816;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #d8b816;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .box h3 {
-    color: #fff;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .box ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+  height: auto;
 }
 
 .box ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .social-icons {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .social-icon {
-    font-size: 2rem;
-    margin: 0 10px;
-    color: #fff;
+  font-size: 2rem;
+  margin: 0 10px;
+  color: #fff;
 }
 
-.footer, a {
-    margin-top: 40px;
-    color: #666;
-    font-size: 0.9rem;
+.footer,
+a {
+  margin-top: 40px;
+  color: #666;
+  font-size: 0.9rem;
 }
 
 .footer .logo {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .footer p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .footer .icon-img {
@@ -350,4 +365,117 @@ nav.sticky .nav-links li a:hover{
 .wrapper .instagram:hover .tooltip::before {
   background: #e4405f;
   color: #fff;
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+  display: none; /* Hidden on larger screens */
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  /* Hide navigation links on smaller screens */
+  .nav-content .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #23af5e;
+    position: absolute;
+    top: 100%; /* Position below the nav bar */
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Display the hamburger menu on smaller screens */
+  .hamburger {
+    display: block;
+  }
+
+  /* Show nav links when active */
+  .nav-content .nav-links.active {
+    display: flex;
+  }
+
+  /* Adjustments for links inside the dropdown */
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .how .content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .how .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Nav content */
+  .nav-content {
+    padding: 10px;
+  }
+  .logo a {
+    font-size: 30px;
+  }
+  .nav-links li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Adjusting navigation links */
+  .nav-content .nav-links {
+    display: none;
+  }
+  
+  .logo a {
+    font-size: 24px;
+  }
+
+  /* Flex directions */
+  .content,
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .content .box {
+    margin-bottom: 10px;
+    width: fit-content;
+  }
+
+  .end .content .box {
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  .main-header {
+    margin-left: 30px;
+    font-size: 2rem;
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .how {
+    height: 100vh;
+  }
+
+  /* Navigation font size and logo size */
+  .logo a {
+    font-size: 20px;
+  }
+  .nav-links li a {
+    font-size: 14px;
+  }
+
+  .icon-img {
+    height: 40px;
+    width: 40px;
+  }
 }

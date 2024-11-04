@@ -8,7 +8,7 @@
   <!-- Change this for appropriate web icon -->
   <link rel="icon" type="image/x-icon" href="../img/foodIcon.png" />
   <!-- You can add more common stylesheets here -->
-  <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="../CSS/marketpage.css" as="style" onload="this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="../BusinessStructure/CSS/homepage.css"></noscript>
   <noscript><link rel="stylesheet" href="../BusinessStructure/CSS/mealpage.css"></noscript>
   <noscript><link rel="stylesheet" href="../BusinessStructure/CSS/marketpage.css"></noscript>
@@ -26,6 +26,8 @@
         <img src="../img/foodIcon.png" alt="Icon" class="icon-img" />
         <a href="homepage.html">AffordaFood</a>
       </div>
+      <!-- Hamburger icon -->
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
       <ul class="nav-links">
         <li><a href="homepage.html">Home</a></li>
         <li><a href="mealpage.html">Meal Plans</a></li>
@@ -47,15 +49,11 @@
     };
   </script>
 
-  <div class="top-background">
-    <div class="header">
-      <h1>MARKET</h1>
-    </div>
-  </div>
-
   <!-- The market section with selection -->
   <section class="market">
-
+    <div class="header-main">
+      <h1>MARKET</h1>
+    </div>
     <div class="container">
       <header>
         <div class="title">PRODUCT LIST</div>
@@ -413,3 +411,10 @@
     }
   ]
 </script>
+
+<script>
+  function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+  }
+  </script>

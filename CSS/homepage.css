@@ -68,7 +68,7 @@ nav.sticky .logo a {
 
 .nav-content .nav-links li {
   list-style: none;
-  margin: 0 8px;
+  margin: 5px 8px;
 }
 
 .nav-links li a {
@@ -305,6 +305,8 @@ nav.sticky .nav-links li a:hover{
 .box ul {
     list-style: none;
     padding: 0;
+    align-items: center;
+    height: auto;
 }
 
 .box ul li {
@@ -448,3 +450,145 @@ nav.sticky .nav-links li a:hover{
   color: #fff;
 }
   
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  /* Nav content */
+  .nav-content {
+      padding: 10px;
+  }
+  .logo a {
+      font-size: 30px;
+  }
+  .nav-links li a {
+      font-size: 16px;
+  }
+
+  /* Why Section */
+  .why .content {
+      flex-direction: column;
+  }
+  .why .box {
+      width: 90%;
+      margin-bottom: 20px;
+  }
+
+  /* Market and Budget Section */
+  .market-budget-container {
+      flex-direction: column;
+      height: auto;
+  }
+  .market, .budget {
+      padding: 30px;
+      background-size: cover;
+      text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* General text adjustments */
+  .welcome h1 {
+      font-size: 32px;
+  }
+  .welcome h3 {
+      font-size: 18px;
+  }
+  .why .box h3, .market h1, .budget h1 {
+      font-size: 24px;
+  }
+  .why .box p, .market p, .budget p {
+      font-size: 16px;
+  }
+
+  /* Adjusting navigation links */
+  .nav-content .nav-links {
+      display: none;
+  }
+  .logo a {
+      font-size: 24px;
+  }
+
+  /* Adjust button size */
+  .welcome a, .market a, .budget a {
+      padding: 10px 20px;
+  }
+  
+  /* Flex directions */
+  .content, .wrapper {
+      flex-direction: column;
+  }
+
+  .content .box {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* General smaller text adjustments */
+  .welcome h1 {
+      font-size: 24px;
+  }
+  .welcome h3 {
+      font-size: 14px;
+  }
+
+  /* Navigation font size and logo size */
+  .logo a {
+      font-size: 20px;
+  }
+  .nav-links li a {
+      font-size: 14px;
+  }
+
+  /* Box width adjustments */
+  .why .box {
+      width: 100%;
+      padding: 20px;
+  }
+
+  /* Buttons and Icon Adjustments */
+  .welcome a, .market a, .budget a {
+      font-size: 14px;
+      padding: 8px 15px;
+  }
+  .icon-img {
+      height: 40px;
+      width: 40px;
+  }
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+  display: none; /* Hidden on larger screens */
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  /* Hide navigation links on smaller screens */
+  .nav-content .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #23af5e;
+      position: absolute;
+      top: 100%; /* Position below the nav bar */
+      right: 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  /* Display the hamburger menu on smaller screens */
+  .hamburger {
+      display: block;
+  }
+
+  /* Show nav links when active */
+  .nav-content .nav-links.active {
+      display: flex;
+  }
+
+  /* Adjustments for links inside the dropdown */
+  .nav-links li {
+      margin: 10px 0;
+  }
+}
