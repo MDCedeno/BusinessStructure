@@ -2,16 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
 /* General Styles */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
     font-family: Arial, sans-serif;
 }
 
 body {
     background-color: #f0f0f0;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 nav {
@@ -74,7 +81,7 @@ nav.sticky .logo a {
 }
 
 .nav-links li a:hover {
-   color: #1e8a4d;
+   color: #23af5e;
 }
  
 nav.sticky .nav-links li a {
@@ -86,251 +93,93 @@ nav.sticky .nav-links li a:hover{
   color: #0a2131;
 }
 
-.top-background {
-    background-color: #d8b816;
-    position: relative;
-    display: flex;
-    height: 90px;
-    align-items: flex-end;
+/* How Section */
+.how {
+    position: relative; /* Make it relative for absolute positioning of the pseudo-element */
+    height: 100vh;
+    color: #fff;
+    overflow: hidden; /* Prevent overflow of the pseudo-element */
+    background-color: #ad2536;
 }
 
-.top-background .header {
-    display: flex;
-    justify-content: center;
+.main-header {
     color: #fff;
-    flex-wrap: wrap;
-    margin-left: 290px;
-    margin-bottom: 12px;
+    margin-left: 300px;
+    margin-top: 48px;
     font-family: Arial, sans-serif;
 }
 
-/* Market section */
-.market {
-    background-color: #f0f0f0;
-    padding: 0;
-    height: 300vh;
-    position: relative;
-}
-
-.container {
-    width: 850px;
-    margin-left: 270px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 0;
-    max-width: 90vw;
+.tutorial {
     text-align: center;
-    padding-top: 10px;
-    transition: transform .5s;
+    display: flex;
+    flex-direction: column;
+    margin-top: 220px;
 }
 
-svg {
-    width: 30px;
+.tutorial h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
-header {
+.tutorial h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.tutorial h4 {
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-weight: lighter;
+    font-style: Bold;
+}
+
+/*.explanation Section */
+.explanation {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 50px;
+}
+
+.explanation .header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.explanation .content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
 }
 
-.icon-cart {
-    position: relative;
-}
-
-.icon-cart span {
-    position: absolute;
-    background-color: #ad2536;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color: #fff;
-    top: 50%;
-    right: -20px;
-}
-
-/* Page Title Styling */
-.title {
-    font-size: 2.5rem; /* Scalable, responsive size */
-    font-weight: bold;
-    color: #555;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Grid Layout for Products */
-.listProduct {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 20px;
-    padding: 0 10px;
-    margin-top: 10px;
-}
-
-/* Product Item Styling */
-.listProduct .item {
+.explanation .box {
     background-color: #f0f0f0;
-    padding: 0;
-    border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow for modern look */
-    transition: transform 0.2s ease-in-out; /* Subtle hover effect */
     text-align: center;
-    height: 400px;
+    padding: 1px;
+    border: 1px solid #23af5e;
+    border-radius: 5px;
+    width: 30%;
 }
 
-.listProduct .item:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-}
-
-/* Product Image Styling */
-.listProduct .item img {
+.explanation .box img.box-image {
     width: 100%;
     height: 200px; /* Adjust height as needed */
     object-fit: cover; /* Ensures the image covers the area without distortion */
     border-radius: 5px 5px 0 0; /* Matches the box’s border radius on top */
     margin-bottom: 10px; /* Space between image and text */
-    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3)); /* Refined shadow */
 }
 
-/* Product Name Styling */
-.listProduct .item h2 {
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: #333;
-    margin: 10px 0;
-    height: 60px;
+.explanation .box p {
+    text-align: left; /* Aligns all text content to the left */
+    margin: 10px 10px;
+    line-height: 1.6; /* Optional: adds readability by increasing line spacing */
+    color: #333; /* Set the color for the paragraph text */
 }
 
-/* Product Price Styling */
-.listProduct .item .price {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #555;
-    letter-spacing: 2px;
-    height: 30px;
+.explanation .box h3 {
+    color: #333; /* Set the color for the h3 headings */
 }
 
-/* Button Styling */
-.listProduct .item button {
-    background-color: #23af5e;
-    color: #ffffff;
-    border: none;
-    padding: 8px 15px;
-    margin-top: 15px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.listProduct .item button:hover {
-    background-color: #1e8a4d;
-}
-
-/* cart */
-.cartTab {
-    width: 390px;
-    background-color: #0a2131;
-    color: #eee;
-    position: fixed;
-    top: 0;
-    right: -400px;
-    bottom: 0;
-    display: grid;
-    grid-template-rows: 70px 1fr 70px;
-    transition: .5s;
-    margin-top: 90px;
-}
-
-body.showCart .cartTab {
-    right: 0;
-}
-
-body.showCart .container {
-    transform: translateX(-250px);
-}
-
-.cartTab h1 {
-    padding: 20px;
-    margin: 0;
-    font-weight: 300;
-    text-align: center;
-}
-
-.cartTab .btn {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 70px;
-}
-
-.cartTab button {
-    background-color: #23af5e;
-    border: none;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.cartTab .close {
-    background-color: #cccccc;
-}
-
-.listCart .item img {
-    width: 70px;
-    height: 70px;
-}
-
-.listCart .item {
-    display: grid;
-    grid-template-columns: 70px 150px 50px 1fr;
-    gap: 10px;
-    text-align: center;
-    align-items: center;
-}
-
-.listCart .quantity {
-    width: 86px;
-}
-
-.listCart .quantity span {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-color: #eee;
-    border-radius: 50%;
-    color: #333;
-    cursor: pointer;
-}
-
-.listCart .quantity span:nth-child(2) {
-    background-color: transparent;
-    color: #eee;
-    cursor: auto;
-}
-
-.listCart .item:nth-child(even) {
-    background-color: #eee1;
-}
-
-.listCart {
-    overflow: auto;
-}
-
-.listCart::-webkit-scrollbar {
-    width: 0;
-}
-
-.total-price {
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 10px 0;
-    color: #f0f0f0;
-}
-
-/* footer */
 .end {
     background-color: #f0f0f0; /* Light gray background */
     padding: 50px;
