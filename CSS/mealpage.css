@@ -99,7 +99,7 @@ nav.sticky .nav-links li a:hover {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
-  height: 140vh;
+  height: max-content;
   padding-top: 48px;
   position: relative;
 }
@@ -136,19 +136,20 @@ h1 {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  height: 420px;
+  height: max-content;
 }
 
 .meal .box {
   background-color: #f0f0f0;
   text-align: center;
   padding: 1px;
+  padding-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
   width: 30%;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   transform-style: preserve-3d;
-  height: 500px;
+  height: max-content;
 }
 
 .meal .box:hover {
@@ -205,8 +206,9 @@ h1 {
 .content {
   display: flex;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 10px;
   color: #fff;
+  gap: 10px;
 }
 
 .box {
@@ -411,16 +413,17 @@ a {
 /* Responsive Design */
 @media (max-width: 1200px) {
   .meal .content {
-    flex-direction: column;
+    gap: 30px;
   }
 
   .meal {
-    height: 180vh;
+    height: max-content;
   }
 
   .meal .box {
     width: 100%;
     margin-bottom: 20px;
+    height: max-content;
   }
 
   h1 {
@@ -446,6 +449,10 @@ a {
 }
 
 @media (max-width: 768px) {
+  .meal .content {
+    flex-direction: column;
+  }
+
   /* Adjusting navigation links */
   .nav-content .nav-links {
     display: none;
@@ -470,15 +477,15 @@ a {
   .wrapper {
     flex-direction: column;
   }
-
-  .content .box {
-    margin-bottom: 10px;
-  }
 }
 
 @media (max-width: 480px) {
-  meal {
-    height: 200vh;
+  .meal {
+    height: max-content;
+  }
+
+  .meal .content .box{
+    height: max-content;
   }
 
   /* Navigation font size and logo size */
@@ -492,5 +499,15 @@ a {
   .icon-img {
     height: 40px;
     width: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .meal {
+    height: max-content;
+  }
+
+  .meal .content .box{
+    height: max-content;
   }
 }

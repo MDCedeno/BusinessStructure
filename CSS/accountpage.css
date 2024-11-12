@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: #0a2131;
 }
 
 * {
@@ -18,7 +18,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 nav {
@@ -96,31 +96,40 @@ nav.sticky .nav-links li a:hover {
 /* Center container and make it responsive */
 .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  height: max-content;
+  width: 100vw;
   align-items: flex-start;
   box-sizing: border-box;
   background-color: #0a2131;
   color:#ddd;
   position: relative; /* Make it relative for absolute positioning of the pseudo-element */
-  height: 100vh;
   overflow: hidden; /* Prevent overflow of the pseudo-element */
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
   padding-top: 40px;
+  flex-direction: column;
 }
 
 .main-header {
+  display: block;
   color: #fff;
-  margin-left: 240px;
+  margin-left: 260px;
   margin-top: 0;
   font-family: Arial, sans-serif;
+}
+
+.forms {
+  display: flex;
+  justify-content: space-around;
+  height: max-content;
+  gap: 20px;
 }
 
 .login-form,
 .register-form {
   width: 30%;
-  height: 500px;
   border: 1px solid #ccc;
   margin-top:60px;
   padding: 20px;
@@ -176,7 +185,7 @@ input[type="email"] {
 }
 
 .btn-log {
-  margin-top: 15px;
+  margin-top: 20px;
   background-color: #23af5e;
   color: #fff;
   padding: 10px 20px;
@@ -186,7 +195,7 @@ input[type="email"] {
 }
 
 .btn-sign {
-    margin-top: 15px;
+    margin-top: 20px;
     background-color: #23af5e;
     color: #fff;
     padding: 10px 20px;
@@ -210,6 +219,8 @@ a {
   background-color: #f0f0f0; /* Light gray background */
   padding: 50px;
   text-align: center;
+  height: max-content;
+  width: 100vw;
 }
 
 .content {
@@ -217,6 +228,7 @@ a {
   justify-content: space-around;
   margin-top: 40px;
   color: #fff;
+  gap: 20px;
 }
 
 .box {
@@ -389,7 +401,7 @@ a {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   /* Hide navigation links on smaller screens */
   .nav-content .nav-links {
       display: none;
@@ -419,7 +431,6 @@ a {
 }
 
 /* Responsive Design */
-
 /* General adjustments for screens 1200px and below */
 @media (max-width: 1200px) {
   /* Navigation */
@@ -454,10 +465,25 @@ a {
 }
 
 /* Further adjustments for medium devices (768px and below) */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   /* Hide navigation links */
   .nav-content .nav-links {
     display: none;
+  }
+
+  .forms {
+    flex-direction: column; 
+  }
+
+  /* Footer adjustments */
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 20px;
   }
   
   /* Adjust logo size */

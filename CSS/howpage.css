@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: #ad2536;
 }
 
 * {
@@ -18,7 +18,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 nav {
@@ -143,6 +143,7 @@ nav.sticky .nav-links li a:hover {
 .explanation {
   background-color: #f0f0f0; /* Light gray background */
   padding: 50px;
+  height: max-content;
 }
 
 .explanation .header {
@@ -194,8 +195,8 @@ nav.sticky .nav-links li a:hover {
 .content {
   display: flex;
   justify-content: space-around;
-  margin-top: 40px;
   color: #fff;
+  gap: 10px;
 }
 
 .content-guide {
