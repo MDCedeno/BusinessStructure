@@ -208,6 +208,7 @@ nav.sticky .nav-links li a:hover{
 .market-budget-container {
     display: flex;
     height: 100vh; /* Makes the container full viewport height */
+    gap: 5px;
 }
 
 /* Market and Budget Sections */

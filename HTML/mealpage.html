@@ -6,28 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Change this for appropriate web icon -->
     <link rel="icon" type="image/x-icon" href="../img/foodIcon.png" />
-    <!-- You can add more common stylesheets here -->
+    <!-- Preload and load CSS for multiple pages -->
+    <link
+      rel="preload"
+      href="../CSS/homepage.css"
+      as="style"
+    />
+    <link
+      rel="preload"
+      href="../CSS/marketpage.css"
+      as="style"
+    />
     <link
       rel="preload"
       href="../CSS/mealpage.css"
       as="style"
-      onload="this.rel='stylesheet'"
     />
-    <noscript
-      ><link rel="stylesheet" href="../BusinessStructure/CSS/homepage.css"
-    /></noscript>
-    <noscript
-      ><link rel="stylesheet" href="../BusinessStructure/CSS/mealpage.css"
-    /></noscript>
-    <noscript
-      ><link rel="stylesheet" href="../BusinessStructure/CSS/marketpage.css"
-    /></noscript>
-    <noscript
-      ><link rel="stylesheet" href="../BusinessStructure/CSS/howpage.css"
-    /></noscript>
-    <noscript
-      ><link rel="stylesheet" href="../BusinessStructure/CSS/accountpage.css"
-    /></noscript>
+    <link
+      rel="preload"
+      href="../CSS/howpage.css"
+      as="style"
+    />
+    <link
+      rel="preload"
+      href="../CSS/accountpage.css"
+      as="style"
+    />
+
+    <noscript>
+      <!-- Fallback for preloaded styles in case JavaScript is disabled -->
+      <link rel="stylesheet" href="../CSS/mealpage.css" />
+    </noscript>
+
     <link rel="stylesheet" href="../CSS/mealpage.css" />
     <title>AffordaFood</title>
   </head>
