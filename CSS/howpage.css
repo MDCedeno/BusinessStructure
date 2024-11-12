@@ -109,7 +109,6 @@ nav.sticky .nav-links li a:hover {
 .main-header {
   color: #fff;
   margin-left: 250px;
-  margin-top: 10px;
   font-family: Arial, sans-serif;
 }
 
@@ -376,7 +375,7 @@ a {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   /* Hide navigation links on smaller screens */
   .nav-content .nav-links {
     display: none;
@@ -417,10 +416,6 @@ a {
     margin-bottom: 20px;
   }
 
-  /* Nav content */
-  .nav-content {
-    padding: 10px;
-  }
   .logo a {
     font-size: 30px;
   }
