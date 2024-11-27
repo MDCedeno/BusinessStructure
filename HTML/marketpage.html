@@ -7,31 +7,11 @@
     <!-- Change this for appropriate web icon -->
     <link rel="icon" type="image/x-icon" href="../img/foodIcon.png" />
     <!-- Preload and load CSS for multiple pages -->
-    <link
-      rel="preload"
-      href="../CSS/homepage.css"
-      as="style"
-    />
-    <link
-      rel="preload"
-      href="../CSS/marketpage.css"
-      as="style"
-    />
-    <link
-      rel="preload"
-      href="../CSS/mealpage.css"
-      as="style"
-    />
-    <link
-      rel="preload"
-      href="../CSS/howpage.css"
-      as="style"
-    />
-    <link
-      rel="preload"
-      href="../CSS/accountpage.css"
-      as="style"
-    />
+    <link rel="preload" href="../CSS/homepage.css" as="style" />
+    <link rel="preload" href="../CSS/marketpage.css" as="style" />
+    <link rel="preload" href="../CSS/mealpage.css" as="style" />
+    <link rel="preload" href="../CSS/howpage.css" as="style" />
+    <link rel="preload" href="../CSS/accountpage.css" as="style" />
 
     <noscript>
       <!-- Fallback for preloaded styles in case JavaScript is disabled -->
@@ -109,7 +89,7 @@
         </div>
         <div class="btn">
           <button class="close">CLOSE</button>
-          <button class="checkOut">CHECK OUT</button>
+          <button class="checkOut" id="checkOutButton">CHECK OUT</button>
         </div>
       </div>
     </section>
@@ -341,6 +321,10 @@
     addCartToHTML();
     addCartToMemory();
   };
+
+  document.getElementById("checkOutButton").addEventListener("click", () => {
+    window.location.href = "checkoutSuccess.html";
+  });
 
   document.addEventListener("DOMContentLoaded", () => {
     const initApp = () => {

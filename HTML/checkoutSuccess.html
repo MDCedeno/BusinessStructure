@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Change this for appropriate web icon -->
+  <link rel="icon" type="image/x-icon" href="../img/foodIcon.png" />
+  <title>AffordaFood</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f7f7f7;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0; /* Prevent default margin on body */
+    }
+    
+    h1 {
+      color: #4CAF50;
+      font-size: 4vw; /* Use relative units for scalability */
+      margin-bottom: 50px;
+    }
+    
+    p {
+      font-size: 1.5vw; /* Relative size for responsiveness */
+      color: #555;
+      margin: 10px 0; /* Adjust spacing */
+    }
+    
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      color: #fff;
+      background-color: #4CAF50;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2vw; /* Adjust button font size */
+    }
+    
+    .btn:hover {
+      background-color: #45a049;
+    }
+    
+    /* Media queries for smaller screens */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 6vw; /* Increase font size slightly */
+      }
+      p {
+        font-size: 3vw; /* Adjust font size for readability */
+      }
+      .btn {
+        font-size: 3.5vw; /* Adjust button font size */
+        padding: 10px 15px; /* Smaller padding */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 8vw; /* Further adjust for very small screens */
+      }
+      p {
+        font-size: 4vw; /* Increase readability on small screens */
+      }
+      .btn {
+        font-size: 4.5vw; /* Button size adjustment */
+        padding: 8px 12px; /* Smaller padding for compact design */
+      }
+    }
+  </style>
+  
+</head>
+<body>
+  <h1>Congratulations!</h1>
+  <p>Thank you for completing the demonstration. You will receive a free taste of the product shortly.</p>
+  <a href="homepage.html" class="btn">Return to Homepage</a>
+</body>
+</html>
